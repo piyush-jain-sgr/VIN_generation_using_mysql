@@ -1,0 +1,24 @@
+{% load crispy_forms_tags %}
+{% block content %}
+
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../static/index.css">
+		<title>Home page</title>
+	</head>
+	<body>
+        <form style="float: left; width: 50%" method="POST">
+                 {% csrf_token %}
+            <fieldset>
+                <legend>Register Today</legend>
+                {{form|crispy}}
+                <center><button type="Submit">Sign UP</button></center>
+            </fieldset>
+        </form>
+        <div style="float: bottam; width: 50%">
+            <small>Already Have An Account? <a href="{% url 'login' %}">Sign In</a></small>
+        </div>
+    </body>
+</html>
+{% endblock content %}

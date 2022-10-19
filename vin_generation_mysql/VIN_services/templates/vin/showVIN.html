@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+    <table style="width:50%">
+    <tr>
+       <th>VIN Number</th>
+     </tr>
+                    {% for key, value in vinNumbers_dict.items%}
+        <tr>
+            <td>{{value}}</td>
+        </tr>
+                    {% endfor %}
+    </table>
+</body>
+</html>

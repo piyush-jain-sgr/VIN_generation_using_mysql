@@ -1,0 +1,16 @@
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../static/index.css">
+		<title>Home page</title>
+	</head>
+	<body>
+        <form class="grid" action="/showVIN/" method="POST">
+                 {% csrf_token %}
+                <label>Enter the time intervel::</label>
+                <input type="datetime-local" id="fromTime" name="fromTime">
+                <input type="datetime-local" id="toTime" name="toTime">
+                <center><input class="file_submit" value="FetchVIN" type="Submit"></center>
+        </form>
+    </body>
+</html>

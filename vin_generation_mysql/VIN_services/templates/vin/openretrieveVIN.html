@@ -1,0 +1,15 @@
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../static/index.css">
+		<title>Home page</title>
+	</head>
+	<body>
+        <form class="grid" action="/retrieveVIN/" method="POST">
+            {% csrf_token %}
+          <label for="vinNumber">Get already created VIN Numbers:</label>
+            <input type="text" id="vinCount" name="vinCount">
+          <center><input class="file_submit" value="Get VIN" type="Submit"></center>
+        </form>
+    </body>
+</html>

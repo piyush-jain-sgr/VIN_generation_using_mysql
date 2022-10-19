@@ -1,0 +1,15 @@
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../static/index.css">
+		<title>Home page</title>
+	</head>
+	<body>
+        <form class="grid" action="/isvalidVIN/" method="POST">
+            {% csrf_token %}
+          <label for="vinNumber">Validate VIN Number:</label>
+            <input type="text" id="vinNumber" name="vinNumber">
+          <center><input class="file_submit" value="Validate" type="Submit"></center>
+        </form>
+    </body>
+</html>

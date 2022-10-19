@@ -1,0 +1,14 @@
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../static/index.css">
+		<title>Home page</title>
+	</head>
+	<body>
+    <h1>VIN Application</h1>
+       <p><a href="{% url 'create-VIN' %}">Create VIN</a></p>
+       <p><a href="{% url 'openvalidate-VIN' %}">Validate VIN</a></p>
+       <p><a href="{% url 'openretrieve-VIN' %}">Retrieve VIN</a></p>
+       <p><a href="{% url 'openinterval-VIN' %}">Retrieve VIN in given time</a></p>
+    </body>
+</html>
